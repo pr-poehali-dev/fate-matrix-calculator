@@ -46,22 +46,22 @@
   }
 
   .dark {
-    --background: 270 20% 10%;
+    --background: 270 30% 5%;
     --foreground: 260 10% 90%;
 
-    --card: 270 20% 12%;
+    --card: 270 30% 7%;
     --card-foreground: 260 10% 90%;
 
-    --popover: 270 20% 12%;
+    --popover: 270 30% 7%;
     --popover-foreground: 260 10% 90%;
 
     --primary: 260 60% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 270 20% 20%;
+    --secondary: 270 25% 15%;
     --secondary-foreground: 260 10% 90%;
 
-    --muted: 270 20% 20%;
+    --muted: 270 25% 15%;
     --muted-foreground: 260 10% 60%;
 
     --accent: 260 60% 60%;
@@ -70,17 +70,17 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 270 20% 25%;
-    --input: 270 20% 25%;
+    --border: 270 25% 18%;
+    --input: 270 25% 18%;
     --ring: 260 60% 60%;
 
-    --sidebar-background: 270 20% 10%;
+    --sidebar-background: 270 30% 5%;
     --sidebar-foreground: 260 10% 90%;
     --sidebar-primary: 260 60% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 270 20% 20%;
+    --sidebar-accent: 270 25% 15%;
     --sidebar-accent-foreground: 260 10% 90%;
-    --sidebar-border: 270 20% 25%;
+    --sidebar-border: 270 25% 18%;
     --sidebar-ring: 260 60% 60%;
   }
 }
@@ -95,20 +95,20 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-montserrat;
+    @apply font-cinzel;
   }
 }
 
 /* Добавляем шрифты */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant:wght@400;500;600;700&display=swap');
 
-/* Дополнительные стили */
+/* Дополнительные стили для оккультного дизайна */
 .matrix-card {
-  @apply relative overflow-hidden bg-gradient-to-br from-white to-lavender dark:from-mystic dark:to-mystic-light rounded-xl shadow-lg transition-all duration-300;
+  @apply relative overflow-hidden bg-gradient-to-br from-white to-lavender dark:from-mystic dark:to-mystic-light rounded-xl shadow-lg transition-all duration-300 backdrop-blur-sm dark:backdrop-blur-md border border-lavender/20 dark:border-accent-purple/20;
 }
 
 .matrix-card:hover {
-  @apply shadow-xl transform translate-y-[-2px];
+  @apply shadow-xl transform translate-y-[-2px] border-accent-purple/40 dark:border-accent-purple/40;
 }
 
 .mystic-circle {
@@ -116,5 +116,83 @@
 }
 
 .hero-pattern {
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%239b87f5' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.cosmic-bg {
+  @apply bg-star-field;
+  background-attachment: fixed;
+}
+
+.talisman {
+  @apply flex items-center justify-center rounded-full w-24 h-24 border-2 border-indigo-light dark:border-accent-purple relative bg-white/10 dark:bg-black/20 backdrop-blur-sm animate-spin-slow overflow-hidden;
+}
+
+.talisman::before {
+  content: "";
+  @apply absolute inset-2 rounded-full border border-indigo dark:border-accent-purple opacity-70;
+}
+
+.talisman::after {
+  content: "";
+  @apply absolute w-20 h-20 animate-glow;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath fill='none' stroke='%239b87f5' stroke-width='1' d='M40,2 L40,78 M2,40 L78,40 M11.7,11.7 L68.3,68.3 M11.7,68.3 L68.3,11.7 M25.8,6.5 L54.2,73.5 M6.5,25.8 L73.5,54.2 M6.5,54.2 L73.5,25.8 M25.8,73.5 L54.2,6.5'/%3E%3C/svg%3E");
+}
+
+.cosmic-symbol {
+  @apply absolute text-indigo dark:text-accent-purple opacity-70 animate-float;
+}
+
+.mystic-glow {
+  @apply fixed pointer-events-none animate-cosmic-shift;
+  background: radial-gradient(circle at 50% 50%, rgba(155, 135, 245, 0.15) 0%, rgba(155, 135, 245, 0) 50%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.scroll-reveal {
+  @apply opacity-0 translate-y-6 transition-all duration-700;
+}
+
+.scroll-reveal.revealed {
+  @apply opacity-100 translate-y-0;
+}
+
+.glow-text {
+  @apply relative inline-block;
+  text-shadow: 0 0 15px rgba(155, 135, 245, 0.7);
+}
+
+.aura-border {
+  @apply relative rounded-xl overflow-hidden;
+}
+
+.aura-border::before {
+  content: "";
+  @apply absolute -inset-0.5 bg-gradient-to-r from-indigo-light via-accent-purple to-accent-pink opacity-75 blur-sm;
+  z-index: -1;
+}
+
+.matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  @apply gap-1 w-32 h-32 mx-auto bg-white/20 dark:bg-black/30 rounded-lg p-1;
+}
+
+.matrix-cell {
+  @apply flex items-center justify-center bg-white/50 dark:bg-mystic-light/30 rounded font-bold text-lg text-indigo dark:text-lavender;
+}
+
+.constellation {
+  @apply absolute w-full h-full top-0 left-0 pointer-events-none;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(155, 135, 245, 0.1) 0%, rgba(155, 135, 245, 0) 8%),
+    radial-gradient(circle at 65% 20%, rgba(217, 70, 239, 0.1) 0%, rgba(217, 70, 239, 0) 6%),
+    radial-gradient(circle at 90% 65%, rgba(139, 92, 246, 0.1) 0%, rgba(139, 92, 246, 0) 7%),
+    radial-gradient(circle at 35% 80%, rgba(155, 135, 245, 0.1) 0%, rgba(155, 135, 245, 0) 9%),
+    radial-gradient(circle at 50% 50%, rgba(155, 135, 245, 0.05) 0%, rgba(155, 135, 245, 0) 50%);
 }
